@@ -1,0 +1,13 @@
+train_dataset:
+  dataset:
+    args:
+      path: ../stroke-diagnosis/load/ASID_v2/train
+  batch_size: 1 #when test model, turn both batch_size to 1, origin: 32
+
+test_dataset:
+  dataset:
+    args:
+      path: ../stroke-diagnosis/load/ASID_v2/test
+  batch_size: 32 # origin:64
+
+epoch_max: 500
